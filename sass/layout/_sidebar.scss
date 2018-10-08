@@ -1,0 +1,95 @@
+.sidebar {
+  max-width: 25rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(15rem, 20rem);
+  background: $color-grey-light-1;
+
+  padding-left: 0.8rem;
+
+  //  all of the child element of sidebar
+
+  & > * {
+    padding-left: 1rem;
+  }
+
+  &__one {
+    &--lists {
+      list-style: none;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    svg {
+      fill: $color-blue-light;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__lists--item,
+  .sidebar__two--item,
+  .sidebar__three--item {
+    // color: $color-light-black;
+    padding-top: 0.8rem;
+    display: grid;
+    grid-template-columns: min-content minmax(min-content, 20rem);
+    grid-column-gap: 1rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background: $color-grey-light-0;
+      border-radius: 3px;
+    }
+  }
+  &__lists-link,
+  .sidebar__two--link,
+  .sidebar__three--link {
+    text-decoration: none;
+    color: $color-light-black;
+    align-self: center;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  // STYLE FOR SIDEBAR TWO
+
+  &__two {
+    &--lists {
+      list-style: none;
+    }
+    &--item {
+      #svg--two {
+        fill: $color-grey-light-0;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  &__two--para,
+  .sidebar__three-para {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: $color-light-black;
+    margin-top: 1.2rem;
+  }
+
+  //STYLE FOR SIDEBAR THREE
+  &__three {
+    &--lists {
+      list-style: none;
+
+      svg {
+        fill: $color-red-light-1;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    &--item {
+    }
+  }
+}

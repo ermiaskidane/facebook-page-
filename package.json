@@ -1,0 +1,14 @@
+{
+  "name": "facebook",
+  "version": "1.0.0",
+  "description": "facebook static page ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "ermias kidane",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
