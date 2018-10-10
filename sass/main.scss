@@ -1,9 +1,9 @@
-@import 'abstract/variables';
-@import 'base/base';
-@import 'base/typographys';
+@import "abstract/variables";
+@import "base/base";
+@import "base/typographys";
 
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/post";
 
-
-
-@import 'layout/header';
-@import 'layout/sidebar'; 
+@import "pages/home";

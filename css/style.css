@@ -146,3 +146,9 @@ h4 {
       fill: #f8706e;
       width: 2rem;
       height: 2rem; }
+
+.section-post {
+  float: left; }
+  .section-post svg {
+    width: 2rem;
+    height: 2rem; }
