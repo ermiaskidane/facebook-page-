@@ -1,7 +1,48 @@
+// temporary style
+
 .section-post {
-  float: left;
+  // background: red;
+  grid-column: col-start 3 / col-end 6;
+  display: grid;
+  grid-template-rows: min-content repeat(2, 1fr);
+  grid-row-gap: 1rem;
+
+  margin-top: 1rem;
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.story {
+  background: yellow;
+  grid-column: col-start 7 / col-end 8;
+
+  margin-top: 1rem;
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
   svg {
     width: 2rem;
     height: 2rem;
   }
 }
+
+.online {
+  background: blue;
+  grid-column: col-start 9 / col-end 11;
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+// end of temporary style

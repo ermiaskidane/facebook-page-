@@ -1,4 +1,73 @@
-h4{
+h4 {
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+// typography of posts
+.post1 {
+  h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-light-black;
+  }
+
+  .post__content {
+    p {
+      color: $color-grey-light-4;
+      font-size: 2.2rem;
+      // font-family: 300;
+      text-transform: capitalize;
+      padding-left: 1.5rem;
+      flex: 1;
+    }
+  }
+}
+
+.post2 {
+  h4,
+  h5,
+  p {
+    color: $color-light-black;
+  }
+  &__main {
+    .post2__figure--1 {
+      h5 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        grid-row: 1/2;
+      }
+      p {
+        font-size: 1.1rem;
+        font-weight: 300;
+        grid-row: 2/3;
+      }
+    }
+
+    &--para {
+      color: $color-light-black;
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+  }
+
+  &__video {
+    h4,
+    p {
+      text-transform: capitalize;
+    }
+  }
+  &__footer {
+    .post2__comments {
+      // &--lists1,
+      // &--lists2{
+
+      //  }
+      &--item:last-child {
+        font-size: 1.3rem;
+        font-size: 400;
+      }
+    }
+  }
 }

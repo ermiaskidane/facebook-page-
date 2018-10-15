@@ -1,14 +1,15 @@
 .sidebar {
+  grid-column: full-start/col-end 2;
+
   max-width: 25rem;
   height: 100%;
-  display: grid;
-  grid-template-columns: minmax(15rem, 20rem);
-  background: $color-grey-light-1;
+  // display: grid;
+  // grid-template-columns: minmax(15rem, 20rem);
+  // background: $color-grey-light-1;
 
   padding-left: 0.8rem;
 
   //  all of the child element of sidebar
-
   & > * {
     padding-left: 1rem;
   }
@@ -34,6 +35,8 @@
   .sidebar__two--item,
   .sidebar__three--item {
     // color: $color-light-black;
+    width: 90%;
+
     padding-top: 0.8rem;
     display: grid;
     grid-template-columns: min-content minmax(min-content, 20rem);
@@ -41,7 +44,7 @@
     transition: all 0.2s;
 
     &:hover {
-      background: $color-grey-light-0;
+      background: $color-grey-light-3;
       border-radius: 3px;
     }
   }
@@ -63,7 +66,7 @@
     }
     &--item {
       #svg--two {
-        fill: $color-grey-light-0;
+        fill: $color-grey-light-3;
         width: 2rem;
         height: 2rem;
       }

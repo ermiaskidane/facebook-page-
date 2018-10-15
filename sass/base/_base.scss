@@ -24,13 +24,12 @@ body {
 .boddy > *:not(:first-child) {
   // margin: 0 0 0 2rem;
   height: 100%;
+  background: $color-grey-light-1;
 }
 
-// main {
-//   background: red;
-//   // margin: 1.5rem 0 0 2rem;
-// }
-
-.section-post {
-  background: orange;
+main {
+  display: grid;
+  grid-template-columns:
+    [full-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end])
+    [full-end];
 }
