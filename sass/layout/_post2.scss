@@ -1,5 +1,6 @@
 .post2 {
   background: $color-grey-light-3;
+  border-radius: 3px;
   &__main {
     padding: 1rem;
   }
@@ -41,7 +42,7 @@
 
     iframe {
       width: 100%;
-      height: 100%;
+      height: auto;
     }
   }
   // POST2 FOOTER
@@ -58,7 +59,8 @@
     .post2__comments {
       display: flex;
       border-bottom: 1px solid $color-grey-light-1;
-      padding: 0.6rem 0;
+      padding: 0.8rem 0;
+      margin: 0 1rem;
 
       &--lists1 {
         justify-content: start;
@@ -68,12 +70,15 @@
       &--item:not(:last-child) {
         margin: 0 2px 0 0;
         border-radius: 50%;
-        width: 2.4rem;
-        height: 2.4rem;
+        width: 2rem;
+        height: 2rem;
 
         svg {
           transform: translate(10%, 10%);
           fill: #fff;
+          // the style in home.scss of svg is overide due to specificity here
+          width: 1.6rem;
+          height: 1.6rem;
         }
       }
       &--item:nth-child(1) {
@@ -88,10 +93,15 @@
       &--item:last-child {
         padding-left: 0.6rem;
       }
+
       // &--lists2 {
-      //   display: flex;
-      //   list-style: none;
+      //   // display: flex;
+      //   // list-style: none;
       // }
+
+      &--item2 {
+        padding-right: 1rem;
+      }
     }
 
     .post2__share {
@@ -105,6 +115,15 @@
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-column-gap: 0.8rem;
+        justify-items: center;
+        align-items: center;
+        transition: all 0.2s;
+      }
+
+      &--item:hover {
+        background-color: $color-grey-light-2;
+        padding: 2px 2rem;
+        border-radius: 3px;
       }
     }
   }

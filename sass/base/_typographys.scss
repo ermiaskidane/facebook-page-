@@ -68,6 +68,111 @@ h4 {
         font-size: 1.3rem;
         font-size: 400;
       }
+
+      &--item2 p {
+        font-size: 1.4rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+// TYPOGRAPHY OF STORY
+.story {
+  &__headline {
+    .story__lists--item h5 {
+      font-size: 1.4rem;
+      // font-weight: 300;
+      text-transform: capitalize;
+    }
+    .story__lists--item:nth-child(1) h5 {
+      font-weight: 400;
+    }
+    .story__lists--item:nth-child(2) h5 {
+      font-weight: 300;
+    }
+    .story__lists--item:nth-child(3) h5 {
+      font-weight: 300;
+    }
+  }
+
+  &__content {
+    &--item:first-child > p {
+      transform: translate(0%, -40%);
+    }
+    &--item:not(:first-child) > h5 {
+      align-self: end;
+    }
+    &--item:last-child > p {
+      grid-column: 2/-1;
+      grid-row: 1/2;
+      align-self: center;
+    }
+    &--item {
+      h5 {
+        grid-column: 2/-1;
+        grid-row: 1/2;
+
+        // align-self: end;
+
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+      p {
+        grid-column: 2/-1;
+        grid-row: 2/-1;
+
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  // ######### story__sponsored ######
+
+  &__sponsored {
+    &--item h4 {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+    &--item:last-child h4 {
+      font-weight: 300;
+    }
+
+    &--cap h5,
+    &--cap a,
+    &--cap p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    &--cap h5 {
+      font-weight: 400;
+    }
+    &--cap a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: $color-blue-light;
+    }
+    &--cap p {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: $color-dark-black;
+    }
+  }
+
+  // ############ story language ########
+  &__language {
+    &--item {
+      font-size: 1.4rem;
+      font-weight: 300;
+      // word-spacing: 1px;
+    }
+  }
+  &__footer {
+    &--item h5 {
+      font-size: 1.3rem;
+      font-weight: 300;
     }
   }
 }

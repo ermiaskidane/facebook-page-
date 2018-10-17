@@ -32,4 +32,5 @@ main {
   grid-template-columns:
     [full-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end])
     [full-end];
+  grid-gap: 1rem;
 }
