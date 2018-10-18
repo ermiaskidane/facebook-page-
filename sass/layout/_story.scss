@@ -144,7 +144,8 @@
 }
 .story__footer {
   // background: $color-grey-light-3;
-  color: black;
+  padding: 0.8rem;
+  color: $color-light-black;
   &--lists {
     list-style: none;
     // display: flex;

@@ -175,4 +175,19 @@ h4 {
       font-weight: 300;
     }
   }
+  //  ############## STORY FOOTER #######
+  &__footer {
+    &--item:last-child h5 {
+      color: $color-dark-black;
+    }
+  }
+}
+
+// ######## ONLINE__FRIENDS #######
+.online {
+  &__friends {
+    &--cap h5 {
+      font-size: 1rem;
+    }
+  }
 }

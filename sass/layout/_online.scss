@@ -1,0 +1,85 @@
+.online__game {
+  padding: 0.7rem;
+  &--lists1,
+  &--lists2 {
+    display: flex;
+
+    list-style: none;
+    padding: 0 0.6rem;
+  }
+  &--lists1 {
+    justify-content: space-between;
+  }
+
+  &--lists2 {
+    align-items: center;
+    background: red;
+  }
+  &--item2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: -0.5rem;
+  }
+  &--item2 > :first-child {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+  &--item2 > :last-child {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    transform: translate(-90%, -2%);
+    border: 2px solid $color-grey-light-1;
+  }
+}
+
+.online__mygame {
+  border-bottom: 1px solid $color-grey-light-2;
+  &--lists {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+    padding: 0.5rem;
+  }
+  //   &--item {
+  //     margin-right: auto;
+  //   }
+
+  #candy__crush--img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+  }
+}
+
+.online__friends {
+  padding: 1rem;
+  &--lists {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  &--item:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+  &--fig {
+    display: flex;
+  }
+  //   &--fig > img {
+  //     width: 3rem;
+  //     height: 3rem;
+  //     border-radius: 50%;
+  //   }
+  .online__friends--img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+  }
+  &--cap {
+    align-self: center;
+    padding-left: 0.8rem;
+  }
+}

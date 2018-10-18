@@ -39,8 +39,8 @@
 }
 
 .online {
-  background: blue;
   grid-column: col-start 9 / col-end 11;
+  border-left: 1px solid $color-light-black;
   img {
     width: 4rem;
     height: 4rem;
