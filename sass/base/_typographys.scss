@@ -11,17 +11,6 @@ h4 {
     text-transform: uppercase;
     color: $color-light-black;
   }
-
-  .post__content {
-    p {
-      color: $color-grey-light-4;
-      font-size: 2.2rem;
-      // font-family: 300;
-      text-transform: capitalize;
-      padding-left: 1.5rem;
-      flex: 1;
-    }
-  }
 }
 
 .post2 {
@@ -74,6 +63,60 @@ h4 {
         font-weight: 300;
       }
     }
+  }
+}
+
+.post3 {
+  &__headline--cap {
+    margin-left: 1rem;
+    color: $color-light-black;
+  }
+  &__headline--cap h5 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  &__headline--cap p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+
+  &__comment1 {
+    &--item h5,
+    &--item h4 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $color-light-black;
+    }
+  }
+
+  &__comment2 {
+    &--item p {
+      color: $color-light-black;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.post3__comment3 {
+  &--cap h5 {
+    grid-column: 1 /2;
+
+    font-size: 1.2rem;
+    color: $color-light-black;
+    font-weight: 300;
+  }
+  &--cap span {
+    font-weight: 400;
+  }
+
+  &--item {
+    font-size: 1.1rem;
+    grid-column: 1/-1;
+    color: $color-light-black;
   }
 }
 
@@ -185,9 +228,47 @@ h4 {
 
 // ######## ONLINE__FRIENDS #######
 .online {
+  // &__game {
+  //   &--item1 h4{
+  //     color: $color-dark-black;
+  //   }
+  // }
+
+  &__game--item1 h4,
+  &__mygame--item h4 {
+    color: $color-dark-black;
+  }
   &__friends {
-    &--cap h5 {
+    &--cap h6 {
       font-size: 1rem;
+      color: $color-dark-black;
+    }
+    &--cap h6:last-child {
+      justify-self: center;
+    }
+  }
+
+  //  ########### ONLINE__SEARCH #############
+
+  &__search {
+    &--headline > :nth-child(2) {
+      width: 0.8rem;
+      height: 0.8rem;
+      background: $color-green-1;
+      justify-self: center;
+      align-self: center;
+      border-radius: 50%;
+    }
+
+    &--headline > :nth-of-type(2) {
+      padding-left: 1rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $color-dark-black;
+    }
+
+    &--headline > :nth-of-type(2) span {
+      color: $color-blue-light-2;
     }
   }
 }

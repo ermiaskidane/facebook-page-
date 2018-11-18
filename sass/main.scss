@@ -1,4 +1,6 @@
 @import "abstract/variables";
+@import "abstract/mixins";
+
 @import "base/base";
 @import "base/typographys";
 
@@ -6,6 +8,7 @@
 @import "layout/sidebar";
 @import "layout/post1";
 @import "layout/post2";
+@import "layout/post3";
 @import "layout/story";
 @import "layout/online";
 

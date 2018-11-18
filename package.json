@@ -4,11 +4,16 @@
   "description": "facebook static page ",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass sass/main.scss css/style.css -w"
+    "sass": "node-sass sass/main.scss css/style.css -w",
+    "deploy": "gh-pages -d dist"
   },
   "author": "ermias kidane",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "npm": "^6.4.1"
   }
 }

@@ -1,2 +1,13 @@
 remote control of git 
 .in source five commit as index.html of online__game and online _mygames been added 
+
+
+http://jsfiddle.net/Jimmy123/Lk8dLwLv/1/
+http://jsfiddle.net/5n5MA/2/
+
+# a div that moves up and down as we scroll https://codepen.io/think123/pen/mAxlb
+
+
+#### to go ###
+1. media query to formalize 
+2. add one new feed to normalize 

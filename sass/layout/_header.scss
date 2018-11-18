@@ -1,54 +1,62 @@
-.header{
+.header {
+  grid-column: col-start 1 / col-end 11;
   display: flex;
   // justify-content: space-between;
   align-items: center;
   background: $color-secondary;
   padding: 1rem;
 
-
-  svg{
+  svg {
     fill: $color-light-black;
-    width:  2rem;
+    width: 2rem;
     height: 2rem;
     cursor: pointer;
   }
 
   //  header__search
-  &__search{
+  &__search {
     padding-right: 25vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    @include respond(big-desktop) {
+      //  width < 1500?
+      margin-right: auto;
+      padding-right: 35vw;
+    }
 
-    .header__svg--1{
+    .header__svg--1 {
       fill: $color-white;
       margin-right: 1rem;
       width: 2.5rem;
       height: 2.5rem;
     }
-
   }
 
-
-
-  &__search--form{
+  &__search--form {
     position: relative;
 
-    input[type="text"]:focus{
+    input[type="text"]:focus {
       outline: 0;
       border: 1px solid $color-secondary;
       border-radius: 6px;
     }
-    input[type="text"]{
+    input[type="text"] {
       padding-left: 1rem;
       width: 40rem;
       height: 2.5rem;
       border-radius: 3px;
       border: none;
+
+      @include respond(big-desktop) {
+        //  width < 1500?
+        width: 60rem;
+        height: 2.8rem;
+      }
     }
 
-    .header__svg--2{
+    .header__svg--2 {
       fill: $color-white;
       background: #eee;
       width: 4rem;
@@ -60,40 +68,47 @@
     }
   }
 
-//  header__text
-  &__text{
+  //  header__text
+  &__text {
     padding: 0 1rem;
 
-    &--lists{
+    &--lists {
       display: flex;
       justify-content: space-between;
       align-items: center;
       list-style: none;
-
     }
-    &--list:not(:last-child){
+    &--list:not(:last-child) {
       padding-right: 1rem;
     }
 
-    &--img{
+    &--img {
       width: 3rem;
       height: 3rem;
       border-radius: 50%;
     }
   }
 
-
-  &__icon{
+  &__icon {
     // padding: 0 1rem 0  0;
 
-    &--lists{
+    &--lists {
       display: flex;
       align-items: center;
       list-style: none;
     }
 
-    &--list:not(:last-child){
+    &--list:not(:last-child) {
       padding-right: 1rem;
     }
   }
 }
+
+// added a class with  jquery
+// .hd--js {
+//   display: grid;
+//   grid-template-columns:
+//     [full-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end])
+//     [full-end];
+//   z-index: 10;
+// }

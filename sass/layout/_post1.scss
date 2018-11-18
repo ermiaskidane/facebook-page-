@@ -45,7 +45,15 @@
     //  for some reason font-weight doesn't work in typography
     // the style is here
     &--para {
-      font-weight: 400;
+      // font-weight: 400;
+      width: 100%;
+      input[type="text"] {
+        width: 100%;
+        padding: 1rem 2rem;
+        border: none;
+        font-size: 2.2rem;
+        background-color: $color-grey-light-3;
+      }
     }
   }
   img {
